@@ -10,7 +10,7 @@
 
 public class GramSchmidt {
 
-	static final double K = 0.1;
+	static final double K = 0.0000000001;
 	// a column vectors
 	final static double[] a1 = { 1, 0, 0, 0, K };
 	final static double[] a2 = { 1, 0, 0, K, 0 };
@@ -28,8 +28,8 @@ public class GramSchmidt {
 
 	public static void main(String[] args) {
 
-		cgsAlgorithm();
-		// modifiedGramSchmidtAlgorithm();
+		//cgsAlgorithm();
+		mgsAlgorithm();
 		printQMatrix();
 		
 		System.out.println("\nPrinting part b\n");
